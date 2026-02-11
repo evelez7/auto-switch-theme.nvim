@@ -8,3 +8,17 @@ duplicate what Neovim already does to determine whether or not the system
 changed themes.
 This only relies on Neovim's own internal updating.
 
+## Setup
+
+lazy.nvim example:
+
+```
+return {
+  'evelez7/auto-switch-theme.nvim',
+  opts = {
+      light = 'dookie',
+      dark = 'github-monochrome-solarized'
+  }
+}
+```
+
