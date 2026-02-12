@@ -1,6 +1,5 @@
-<p align="center">
-  <video src="https://github.com/evelez7/auto-switch-theme.nvim/blob/main/.github/example.mp4" alt="Theme change example"/>
-</p>
+https://github.com/user-attachments/assets/4f0f255d-5f28-405e-a246-b9ad7fa3a4df
+
 
 A simple plugin to automatically switch themes when the system theme changes.
 
