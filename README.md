@@ -13,6 +13,10 @@ This only relies on Neovim's own internal updating.
 
 Tested on macOS and Fedora GNOME.
 
+> [!WARNING]
+> Explicitly setting your `background` will cause Neovim to delete its own
+> autocmd that detects a system theme change, which will break this plugin.
+
 ## Setup
 
 lazy.nvim example:
