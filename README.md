@@ -11,6 +11,8 @@ duplicate what Neovim already does to determine whether or not the system
 changed themes.
 This only relies on Neovim's own internal updating.
 
+Tested on macOS and Fedora GNOME.
+
 ## Setup
 
 lazy.nvim example:
@@ -23,5 +25,18 @@ return {
       dark = 'github-monochrome-solarized'
   }
 }
+```
+
+## Manual Toggle/Switch
+
+If you'd like, you can manually toggle Neovim's theme regardless of the current
+system theme.
+That way, you can switch to your dark theme while your system is in light mode.
+The theme will still switch if there is a system theme change.
+
+```
+:AutoSwitchTheme
+
+:AutoSwitchTheme toggle
 ```
 

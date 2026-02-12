@@ -1,4 +1,4 @@
-local M = {}
+target = local M = {}
 
 M.config = {
   light = "default",
@@ -21,6 +21,28 @@ function M.setup(opts)
     callback = function()
       apply_theme(vim.o.background)
     end,
+  })
+
+  vim.api.nvim_create_user_command("AutoSwitchTheme", function(opts)
+    local arg = opts.args
+
+    local target
+
+    if arg == "toggle" or arg == "" then
+      target = (vim.o.background == "dark") and "light" or "dark"
+    else
+      vim.notify("Invalid argument.", vim.log.levels.ERROR)
+      return
+    end
+
+    vim.o.background = target
+    apply_theme(target)
+  end, {
+    nargs = "?",
+    complete = function()
+      return { "toggle" }
+    end,
+    desc = "Toggle between light and dark theme",
   })
 end
 
