@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/evelez7/auto-switch-theme.nvim/blob/main/.github/example.gif" alt="Theme change example"/>
+</p>
+
 A simple plugin to automatically switch themes when the system theme changes.
 
 This plugin simply creates an autocmd to listen for an `OptionSet` event on `background`.
