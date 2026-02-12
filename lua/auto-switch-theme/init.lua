@@ -1,4 +1,4 @@
-target = local M = {}
+local M = {}
 
 M.config = {
   light = "default",
